@@ -33,7 +33,7 @@ foreach (@output2){
     $inputindex = $inputstr[1];
     $inputindex =~ s/\s+$//;
     $cmd3 = "pacmd move-sink-input $inputindex $indexNumber";
-    `$cmd`;
+    `$cmd3`;
 }
 
 my $notify = Desktop::Notify->new();
